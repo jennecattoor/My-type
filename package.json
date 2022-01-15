@@ -1,7 +1,7 @@
 {
-  "name": "webpack-php-template",
+  "name": "My-type",
   "version": "1.0.0",
-  "description": "template for a webpack project with php",
+  "description": "A closer look into the Futura typeface",
   "main": "index.js",
   "devDependencies": {
     "css-loader": "^6.3.0",
@@ -29,6 +29,18 @@
     "clean": "rm -rf ./dist",
     "heroku-postbuild": "npm run prod"
   },
-  "author": "Frederik Duchi",
-  "license": "ISC"
+  "author": "Jenne Cattoor",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenneeee/My-type.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jenneeee/My-type/issues"
+  },
+  "homepage": "https://github.com/Jenneeee/My-type#readme",
+  "dependencies": {
+    "pack": "^2.2.0",
+    "web": "^0.0.2"
+  }
 }
