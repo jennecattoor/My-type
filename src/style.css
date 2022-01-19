@@ -74,6 +74,7 @@ p {
   margin: 5rem 0;
   font-size: 1.8rem;
   line-height: 3rem;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -110,9 +111,8 @@ p {
   }
 
   .introduction-text {
-    font-size: 3.5rem;
-    line-height: 5rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 4rem;
     max-width: 80rem;
   }
 }
@@ -137,5 +137,10 @@ p {
 
   .introduction {
     padding: 0 3rem;
+  }
+
+  .introduction-text {
+    font-size: 3.5rem;
+    line-height: 5rem;
   }
 }
