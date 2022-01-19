@@ -37,6 +37,13 @@ p {
   line-height: 2.2rem;
 }
 
+.section-title {
+  color: var(--colorOrange);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 /* Slanted */
 
 .slanted {
@@ -92,6 +99,27 @@ p {
   font-weight: 500;
 }
 
+/* Characteristics */
+
+.characteristics {
+  padding: 5rem var(--spacerSmall);
+}
+
+.character_item {
+  margin: 6rem 0;
+  max-width: 35rem;
+}
+
+.character_item-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.character-shapes {
+  width: 3rem;
+  margin-right: .5rem;
+}
+
 @media only screen and (min-width: 768px) {
 
   /* Slanted */
@@ -138,13 +166,20 @@ p {
     line-height: 4rem;
     max-width: 80rem;
   }
+
+  /* Characteristics */
+
+  .characteristics {
+    padding: 5rem var(--spacerBig);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 
+  /* Slanted */
+
   .slanted {
     position: fixed;
-
   }
 
   /* Header */
@@ -170,5 +205,11 @@ p {
   .introduction-text {
     font-size: 3.5rem;
     line-height: 5rem;
+  }
+
+  /* Characteristics */
+
+  .characteristics {
+    padding: 5rem 3rem;
   }
 }
