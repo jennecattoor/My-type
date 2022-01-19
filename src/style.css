@@ -13,17 +13,31 @@ html {
 }
 /* stylelint-enable */
 
+/* General styling */
+
 body {
   font-family: futura-pt, sans-serif;
   font-size: 22px;
   background-color: var(--colorLightGreen);
 }
 
+.underline {
+  padding-bottom: 1rem;
+  text-decoration: underline solid var(--colorBlack) 2px;
+  text-underline-offset: 3px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/* Header */
+
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: center;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   padding: 0 var(--spacerSmall);
@@ -31,6 +45,7 @@ body {
 }
 
 .title {
+  margin-top: -5rem;
   font-size: 9rem;
 }
 
@@ -39,7 +54,25 @@ body {
   font-size: 2rem;
 }
 
+/* Introduction */
+
+.introduction {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-color: var(--colorGreen);
+  padding: 0 var(--spacerSmall);
+  display: flex;
+  align-items: center;
+}
+
+.introduction-text {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
 @media only screen and (min-width: 768px) {
+
+  /* Header */
 
   .header {
     padding: 0 var(--spacerBig);
@@ -52,9 +85,25 @@ body {
   .title-small {
     font-size: 2.5rem;
   }
+
+  /* Introduction */
+
+  .introduction {
+    padding: 0 var(--spacerBig);
+    justify-content: flex-end;
+  }
+
+  .introduction-text {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    font-weight: 500;
+    max-width: 80rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+
+  /* Header */
 
   .header {
     padding: 0 3rem;
@@ -66,5 +115,11 @@ body {
 
   .title-small {
     font-size: 3rem;
+  }
+
+  /* Introduction */
+
+  .introduction {
+    padding: 0 3rem;
   }
 }
