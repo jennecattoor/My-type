@@ -14,17 +14,33 @@ html {
 /* stylelint-enable */
 
 body {
-  font-family: var(--font);
+  font-family: futura-pt, sans-serif;
+  background-color: var(--colorGreen);
 }
 
-.container {
-  width: 60rem;
-  margin: var(--spacerBig) auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header {
+  background-color: var(--colorLightGreen);
 }
 
-.pagetitle {
-  font-size: var(--fontBig);
+.title {
+  color: var(--colorOrange);
+  font-size: 10rem;
+  text-align: center;
 }
+
+.title-small {
+  color: var(--colorOrange);
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* stylelint-disable */
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+/* stylelint-enable */
