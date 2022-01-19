@@ -1,6 +1,11 @@
 @import './css/reset.css';
 @import './css/vars.css';
 
+@font-face {
+  font-family: "Suisseregular";
+  src: url("./assets/fonts/SuisseRegular") format("woff2");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -29,6 +34,15 @@ body {
 
 p {
   line-height: 2.2rem;
+}
+
+/* Slanted */
+
+.slanted {
+  font-family: Suisseregular, sans-serif;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
 }
 
 /* Header */
@@ -79,6 +93,14 @@ p {
 
 @media only screen and (min-width: 768px) {
 
+  /* Slanted */
+
+  .slanted {
+    font-size: 28px;
+    top: 1rem;
+    left: 2rem;
+  }
+
   /* General */
 
   .mobile-br {
@@ -118,6 +140,11 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .slanted {
+    position: fixed;
+
+  }
 
   /* Header */
 

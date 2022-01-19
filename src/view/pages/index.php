@@ -1,4 +1,5 @@
 <section class="content">
+  <div class="slanted"><p>slanted</p></div>
   <section class="header">
     <h1 class="title">Futura</h1>
     <h2 class="title-small">The geometric <br class="mobile-br">sans-serif font</h2>
