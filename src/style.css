@@ -15,32 +15,56 @@ html {
 
 body {
   font-family: futura-pt, sans-serif;
-  background-color: var(--colorGreen);
-}
-
-.header {
+  font-size: 22px;
   background-color: var(--colorLightGreen);
 }
 
-.title {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  padding: 0 var(--spacerSmall);
   color: var(--colorOrange);
-  font-size: 10rem;
-  text-align: center;
+}
+
+.title {
+  font-size: 9rem;
 }
 
 .title-small {
-  color: var(--colorOrange);
   text-transform: uppercase;
   font-size: 2rem;
-  text-align: center;
 }
 
-/* stylelint-disable */
 @media only screen and (min-width: 768px) {
 
+  .header {
+    padding: 0 var(--spacerBig);
+  }
+
+  .title {
+    font-size: 18rem;
+  }
+
+  .title-small {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 
+  .header {
+    padding: 0 3rem;
+  }
+
+  .title {
+    font-size: 22rem;
+  }
+
+  .title-small {
+    font-size: 3rem;
+  }
 }
-/* stylelint-enable */

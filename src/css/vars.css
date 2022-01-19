@@ -4,9 +4,9 @@
   --colorDarkGreen: #a1aca1;
   --colorBlack: #0c1618;
   --colorOrange: #ff5f1f;
-  --spacerSmall: .75rem; /* 12px */
-  --spacerRegular: 1rem; /* 16px */
-  --spacerBig: 1.88rem; /* 30px */
+  --spacerSmall: .85rem; /* 12px */
+  --spacerRegular: 1rem;/* 16px */
+  --spacerBig: 2rem; /* 30px */
   --fontSmall: .75rem; /* 12px */
   --fontRegular: 1.13rem; /* 18px */
   --fontMedium: 1.25rem; /* 20px */
