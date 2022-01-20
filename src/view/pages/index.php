@@ -14,21 +14,13 @@
   </section>
   <section class="characteristics">
     <h3 class="section-title character-title">Characteristics of Futura</h3>
-    <div class="character_item">
-      <hr>
-      <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes">High ascenders & circular counterspace</p>
-      <hr>
-      <p class="character_item-description">The ascenders rise above the ascender line. This create their really iconic shape but makes the font harder to read on long texts.
-        As the letters are based on geometric shapes, they also have a circular counterspace.
-      </p>
-    </div>
-    <div class="character_item">
-      <hr>
-      <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes">Low crossbar & extended width</p>
-      <hr>
-      <p class="character_item-description">Lowercase letters have a low corssbar. This creates a bigger difference between capitals and and lowercase letters.
-        Not only is the crossbar lower, Capitals like the letter F have an extended width
-      </p>
-    </div>
+    <?php foreach($characteristics as $characteristic): ?>
+      <div class="character_item">
+        <hr>
+        <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
+        <hr>
+        <p class="character_item-description"><?php echo $characteristic->description ?></p>
+      </div>
+    <?php endforeach; ?>
   </section>
 </section>
