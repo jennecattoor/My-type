@@ -13,13 +13,16 @@
     <p>
   </section>
   <section class="characteristics">
-    <h3 class="section-title character-title">Characteristics of Futura</h3>
+    <h3 class="section-title character-title">Characteristics<br>of Futura</h3>
     <?php foreach($characteristics as $characteristic): ?>
       <div class="character_item">
-        <hr>
-        <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
-        <hr>
-        <p class="character_item-description"><?php echo $characteristic->description ?></p>
+        <div>
+          <hr>
+          <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
+          <hr>
+          <p class="character_item-description"><?php echo $characteristic->description ?></p>
+        </div>
+        <img class="character_item-image" src="./assets/letters/<?php echo $characteristic->id ?>.svg" alt="<?php echo $characteristic->title ?>">
       </div>
     <?php endforeach; ?>
   </section>
