@@ -9,7 +9,24 @@ gsap.to('.introduction-text', {
   duration: '.5'
 });
 
+gsap.to('.paul_renner', {
+  xPercent: - 100,
+  x: () => innerWidth,
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.paul_renner',
+    start: 'top top',
+    end: () => innerWidth * 6,
+    scrub: true,
+    pin: true,
+    invalidateOnRefresh: true,
+    anticipatePin: 1
+  }
+});
+
+
 export const init = () => {
+
   window.addEventListener('resize', () => {
     const vh = window.innerHeight * 0.01;
     if (window.innerWidth >= 1024) {

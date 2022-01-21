@@ -22,6 +22,7 @@ html {
 /* General styling */
 
 body {
+  overflow-x: hidden;
   font-family: futura-pt, sans-serif;
   font-size: 22px;
   background-color: var(--colorLightGreen);
@@ -137,10 +138,24 @@ p {
   background-color: var(--colorBlack);
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  overscroll-behavior: none;
+  display: flex;
+  width: 400vw;
+}
+
+.paul_renner-title {
+  margin: 8rem;
 }
 
 .paul_renner p {
   color: white;
+}
+
+/* Used today */
+
+.used-today {
+  min-height: 100vh;
+  background-color: var(--colorDarkGreen);
 }
 
 @media only screen and (min-width: 768px) {
