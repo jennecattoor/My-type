@@ -140,7 +140,7 @@ p {
   min-height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   display: flex;
-  width: 550vw;
+  width: 580%;
 }
 
 .paul_renner-title {
@@ -166,6 +166,8 @@ p {
 
 .paul_story-image-text {
   font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
   text-align: right;
 }
 

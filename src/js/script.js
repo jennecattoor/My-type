@@ -16,7 +16,7 @@ gsap.to('.paul_renner', {
   scrollTrigger: {
     trigger: '.paul_renner',
     start: 'top top',
-    end: () => innerWidth * 6,
+    end: () => innerWidth * 9,
     scrub: true,
     pin: true,
     invalidateOnRefresh: true,
