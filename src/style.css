@@ -40,7 +40,7 @@ p {
 .section-title {
   color: var(--colorOrange);
   text-transform: uppercase;
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -97,6 +97,7 @@ p {
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 500;
+  color: var(--colorDarkGreen);
 }
 
 /* Characteristics */
@@ -130,7 +131,29 @@ p {
   justify-self: center;
 }
 
+/* Paul Renner */
+
+.paul_renner {
+  background-color: var(--colorBlack);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.paul_renner p {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
+
+  /* General */
+
+  .mobile-br {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+  }
 
   /* Slanted */
 
@@ -138,12 +161,6 @@ p {
     font-size: 28px;
     top: 1rem;
     left: 2rem;
-  }
-
-  /* General */
-
-  .mobile-br {
-    display: none;
   }
 
   /* Header */
@@ -183,10 +200,6 @@ p {
     padding: 5rem var(--spacerBig);
   }
 
-  .character-title {
-    font-size: 3.5rem;
-  }
-
   .character_item {
     margin: 10rem auto;
     max-width: 75rem;
@@ -200,6 +213,12 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  /* General */
+
+  .section-title {
+    font-size: 5rem;
+  }
 
   /* Slanted */
 
@@ -236,10 +255,6 @@ p {
 
   .characteristics {
     padding: 5rem 3rem;
-  }
-
-  .character-title {
-    font-size: 5rem;
   }
 
   .character_item-image {

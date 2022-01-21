@@ -1,3 +1,14 @@
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('.introduction-text', {
+  scrollTrigger: '.introduction-text',
+  color: 'var(--colorBlack)',
+  duration: '.5'
+});
+
 export const init = () => {
   window.addEventListener('resize', () => {
     const vh = window.innerHeight * 0.01;
