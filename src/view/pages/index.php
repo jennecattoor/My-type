@@ -27,17 +27,22 @@
     <?php endforeach; ?>
   </section>
   <section class="paul_renner">
-    <h3 class="section-title paul_renner-title">The man<br>behind Futura:<br>Paul Renner</h3>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-    <p>How a boy born in Prussia changed the typeface world forever</p>
-  </section>
+    <div>
+      <h3 class="section-title paul_renner-title">The man<br>behind Futura:<br>Paul Renner</h3>
+      <p>How a boy born in Prussia changed the typeface world forever</p>
+    </div>
+    <?php foreach($stories as $story): ?>
+    <div class="paul_story">
+      <div class="paul_story-text">
+        <hr>
+        <p><?php echo $story->text ?></p>
+      </div>
+      <div class="paul_story-image">
+        <img src="./assets/img/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
+        <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
+      </div>
+    </div>
+    <?php endforeach; ?>
   <section class="used-today">
     <h3 class="section-title">Futura used today - Futura used today</h3>
     <h3 class="section-title">Futura used today - Futura used today</h3>

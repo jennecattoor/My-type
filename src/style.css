@@ -140,7 +140,7 @@ p {
   min-height: calc(var(--vh, 1vh) * 100);
   overscroll-behavior: none;
   display: flex;
-  width: 400vw;
+  width: 550vw;
 }
 
 .paul_renner-title {
@@ -149,6 +149,29 @@ p {
 
 .paul_renner p {
   color: white;
+}
+
+.paul_story {
+  display: flex;
+}
+
+.paul_story-text {
+  margin: 8rem 15rem;
+  width: 40rem;
+}
+
+.paul_story-image-photo {
+  width: 40rem;
+}
+
+.paul_story-image-text {
+  font-size: 18px;
+  text-align: right;
+}
+
+.paul_story-shapes {
+  width: 2.5rem;
+  margin-right: .5rem;
 }
 
 /* Used today */
