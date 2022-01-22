@@ -105,6 +105,10 @@ p {
 
 .characteristics {
   padding: 5rem var(--spacerSmall);
+  /* stylelint-disable-next-line function-url-quotes */
+  background-image: url('./assets/img/background.svg');
+  background-repeat: no-repeat;
+  background-size: 220%;
 }
 
 .character_item {
@@ -253,6 +257,7 @@ p {
 
   .characteristics {
     padding: 5rem var(--spacerBig);
+    background-size: 140%;
   }
 
   .character_item {
@@ -272,7 +277,7 @@ p {
   /* General */
 
   .section-title {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   /* Slanted */
@@ -309,7 +314,8 @@ p {
   /* Characteristics */
 
   .characteristics {
-    padding: 5rem 3rem;
+    padding: 7.5rem 8.5rem;
+    background-size: 100%;
   }
 
   .character_item-image {

@@ -39,10 +39,12 @@
             <hr>
            <p><?php echo $story->text ?></p>
           </div>
-          <div class="paul_story-image">
-            <img src="./assets/img/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
-            <?php if ($story->has_image == 1): ?><p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p><?php endif; ?>
-          </div>
+          <?php if ($story->has_image == '1'): ?>
+            <div class="paul_story-image">
+              <img src="./assets/img/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
+              <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
+            </div>
+          <?php endif; ?>
         </div>
         <?php endforeach; ?>
       </div>
