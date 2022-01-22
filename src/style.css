@@ -136,10 +136,13 @@ p {
 
 .paul_renner {
   overflow-x: hidden;
+  overscroll-behavior: none;
   background-color: var(--colorBlack);
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
-  overscroll-behavior: none;
+}
+
+.animation-wrap {
   display: flex;
   width: 580%;
 }
