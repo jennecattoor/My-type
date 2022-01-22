@@ -27,7 +27,7 @@
     <?php endforeach; ?>
   </section>
   <section class="paul_renner">
-    <div>
+    <div class="paul_renner-intro">
       <h3 class="section-title paul_renner-title">The man<br>behind Futura:<br>Paul Renner</h3>
       <p>How a boy born in Prussia changed the typeface world forever</p>
     </div>

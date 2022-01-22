@@ -9,7 +9,9 @@ gsap.to('.introduction-text', {
   duration: '.5'
 });
 
-gsap.to('.paul_renner', {
+const horizontal = document.querySelector('.paul_renner');
+
+gsap.to(horizontal, {
   xPercent: - 100,
   x: () => innerWidth,
   ease: 'none',
@@ -19,8 +21,9 @@ gsap.to('.paul_renner', {
     end: () => innerWidth * 9,
     scrub: true,
     pin: true,
+    markers: true,
     invalidateOnRefresh: true,
-    anticipatePin: 1
+    anticipatePin: 1,
   }
 });
 
