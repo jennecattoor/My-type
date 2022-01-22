@@ -27,11 +27,11 @@
     <?php endforeach; ?>
   </section>
   <section class="paul_renner">
-    <div class="pin-wrap">
-      <div class="animation-wrap to-right">
+    <div class="paul_renner-pin">
+      <div class="paul_renner-wrap to-right">
         <div class="paul_renner-intro">
           <h3 class="section-title paul_renner-title">The man<br>behind Futura:<br>Paul Renner</h3>
-          <p>How a boy born in Prussia changed the typeface world forever</p>
+          <p class="paul_renner-desc">How a boy born in Prussia changed the typeface world forever</p>
         </div>
         <?php foreach($stories as $story): ?>
         <div class="paul_story">
@@ -41,7 +41,7 @@
           </div>
           <div class="paul_story-image">
             <img src="./assets/img/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
-           <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
+            <?php if ($story->has_image == 1): ?><p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p><?php endif; ?>
           </div>
         </div>
         <?php endforeach; ?>

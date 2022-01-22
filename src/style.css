@@ -140,11 +140,13 @@ p {
   background-color: var(--colorBlack);
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  color: white;
+  padding: var(--spacerSmall);
+  padding-top: 0;
 }
 
-.animation-wrap {
+.paul_renner-wrap {
   display: flex;
-  width: 580%;
 }
 
 .paul_renner-intro {
@@ -152,14 +154,14 @@ p {
 }
 
 .paul_renner-title {
-  margin: 2rem;
+  margin-top: 3rem;
   width: 100vw;
 }
 
-.paul_renner p {
-  font-size: 18px;
-  line-height: 1.8rem;
-  color: white;
+.paul_renner-desc {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .paul_story {
@@ -168,7 +170,9 @@ p {
 
 .paul_story-text {
   margin: 4rem 5rem;
-  width: 20rem;
+  width: 22rem;
+  font-size: 18px;
+  line-height: 1.8rem;
 }
 
 .paul_story-image-photo {

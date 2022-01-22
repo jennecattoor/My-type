@@ -9,32 +9,12 @@ gsap.to('.introduction-text', {
   duration: '.5'
 });
 
-/*
-
-const horizontal = document.querySelector('.paul_renner');
-
-gsap.to(horizontal, {
-  xPercent: - 100,
-  x: () => innerWidth,
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.paul_renner',
-    start: 'top top',
-    end: () => innerWidth * 9,
-    scrub: true,
-    pin: true,
-    markers: true,
-    invalidateOnRefresh: true,
-    anticipatePin: 1,
-  }
-});*/
-
 const horizontalSections = gsap.utils.toArray('.paul_renner');
 
 horizontalSections.forEach(function (sec) {
 
-  const thisPinWrap = sec.querySelector('.pin-wrap');
-  const thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
+  const thisPinWrap = sec.querySelector('.paul_renner-pin');
+  const thisAnimWrap = thisPinWrap.querySelector('.paul_renner-wrap');
 
   const getToValue = () => - (thisAnimWrap.scrollWidth - window.innerWidth);
 
@@ -49,9 +29,8 @@ horizontalSections.forEach(function (sec) {
       end: () => `+=${ thisAnimWrap.scrollWidth - window.innerWidth}`,
       pin: thisPinWrap,
       invalidateOnRefresh: true,
-      //anticipatePin: 1,
+      anticipatePin: 1,
       scrub: true,
-      //markers: true,
     }
   });
 
