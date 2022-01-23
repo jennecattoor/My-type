@@ -5,6 +5,9 @@
   <section class="header">
     <h1 class="title">Futura</h1>
     <h2 class="title-small">The geometric <br class="mobile-br">sans-serif font</h2>
+    <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1919 1003.9995">
+      <?php echo $svgs->background ?>
+    </svg>
   </section>
   <section class="introduction">
     <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes.svg" alt="geometric shapes"><br class="mobile-br">

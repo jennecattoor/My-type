@@ -77,6 +77,29 @@ p {
   font-size: 2rem;
 }
 
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.lines {
+  fill: none;
+  stroke: #d0dcd0;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+}
+
+.shape {
+  fill: #d0dcd0;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+
 /* Introduction */
 
 .introduction {
