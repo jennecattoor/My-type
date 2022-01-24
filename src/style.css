@@ -99,7 +99,10 @@ p {
 
 .hidden {
   opacity: 0;
-  transition: 1s;
+}
+
+.background-heart {
+  display: none;
 }
 
 .scroll-down {
@@ -281,9 +284,9 @@ p {
   }
 
   .scroll-down {
-    width: 10rem;
-    right: 4rem;
-    bottom: 8rem;
+    width: 6rem;
+    right: 2rem;
+    bottom: 2rem;
   }
 
   /* Introduction */
@@ -344,6 +347,7 @@ p {
 
   .title {
     font-size: 22rem;
+    margin-bottom: -1rem;
   }
 
   .title-small {
@@ -358,6 +362,20 @@ p {
     top: 0;
     left: 0;
     z-index: -1;
+  }
+
+  .background-heart {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 5.8rem;
+    bottom: 11.5rem;
+  }
+
+  .background-heart span {
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding-bottom: .5rem;
   }
 
   .scroll-down {

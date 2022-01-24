@@ -8,6 +8,7 @@
     <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
       <?php echo $svgs->background ?>
     </svg>
+    <a class="background-heart"><span>Click here</span><br>if you &#9829; Futura</a>
     <img class="scroll-down" src="./assets/img/scroll.svg" alt="Scroll down">
   </section>
   <section class="introduction">
