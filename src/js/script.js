@@ -53,6 +53,8 @@ const randomShapes = () => {
 
 export const init = () => {
 
+  randomShapes();
+  randomShapes();
   setInterval(randomShapes, 2500);
 
   window.addEventListener('resize', () => {

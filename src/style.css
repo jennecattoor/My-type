@@ -78,6 +78,7 @@ p {
 }
 
 .header-background {
+  transform: rotate(90deg) scale(1.9);
   position: absolute;
   top: 0;
   left: 0;
@@ -257,6 +258,14 @@ p {
 
   .title-small {
     font-size: 2.5rem;
+  }
+
+  .header-background {
+    transform: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   /* Introduction */
