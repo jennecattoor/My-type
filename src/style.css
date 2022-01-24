@@ -103,6 +103,14 @@ p {
   transition: 1s;
 }
 
+.scroll-down {
+  animation: rotation 6s infinite linear;
+  width: 6rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 8rem;
+}
+
 /* Introduction */
 
 .introduction {
@@ -273,12 +281,10 @@ p {
     font-size: 2.5rem;
   }
 
-  .header-background {
-    transform: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  .scroll-down {
+    width: 10rem;
+    right: 4rem;
+    bottom: 8rem;
   }
 
   /* Introduction */
@@ -345,6 +351,20 @@ p {
     font-size: 3rem;
   }
 
+  .header-background {
+    transform: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .scroll-down {
+    width: 10rem;
+    right: 4.7rem;
+    bottom: 8.2rem;
+  }
+
   /* Introduction */
 
   .introduction {
@@ -380,5 +400,16 @@ p {
 
   .paul_story-image-photo {
     width: 40rem;
+  }
+}
+
+@keyframes rotation {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
   }
 }
