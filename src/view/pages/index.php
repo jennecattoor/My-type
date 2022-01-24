@@ -5,7 +5,7 @@
   <section class="header">
     <h1 class="title">Futura</h1>
     <h2 class="title-small">The geometric <br class="mobile-br">sans-serif font</h2>
-    <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1919 1003.9995">
+    <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
       <?php echo $svgs->background ?>
     </svg>
   </section>

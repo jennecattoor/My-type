@@ -1,4 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1919 1003.9995">
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+
+<g id="Lines">
+	<line class="lines" x1="666.9" y1="1080" x2="666.9" y2="-0.1"/>
+	<line class="lines" x1="-71.9" y1="152.3" x2="1992.6" y2="152.3"/>
+	<line class="lines" x1="-71.9" y1="346.1" x2="1992.6" y2="346.1"/>
+	<line class="lines" x1="-71.9" y1="539.9" x2="1992.6" y2="539.9"/>
+	<line class="lines" x1="-71.9" y1="733.8" x2="1992.6" y2="733.8"/>
+	<line class="lines" x1="-71.9" y1="927.6" x2="1992.6" y2="927.6"/>
+	<line class="lines" x1="79.8" y1="1080" x2="79.8" y2="-0.1"/>
+	<line class="lines" x1="275.5" y1="1080" x2="275.5" y2="-0.1"/>
+	<line class="lines" x1="471.2" y1="1080" x2="471.2" y2="-0.1"/>
+	<line class="lines" x1="1253.9" y1="1080" x2="1253.9" y2="-0.1"/>
+	<line class="lines" x1="1449.6" y1="1080" x2="1449.6" y2="-0.1"/>
+	<line class="lines" x1="1645.3" y1="1080" x2="1645.3" y2="-0.1"/>
+	<line class="lines" x1="1841" y1="1080" x2="1841" y2="-0.1"/>
+	<line class="lines" x1="1058.2" y1="1080" x2="1058.2" y2="-0.1"/>
+	<line class="lines" x1="862.5" y1="1080" x2="862.5" y2="-0.1"/>
+</g>
+<g id="35" class="shape_wrapper hidden" data-name="35">
+	<polygon class="shape" points="1546.5,903.4 1629.6,759.4 1463.3,759.4 	"/>
+</g>
+<g id="34" class="shape_wrapper hidden" data-name="34">
+	<polygon class="shape" points="1351.8,758.7 1268.6,902.7 1434.9,902.7 	"/>
+</g>
+<g id="33" class="shape_wrapper hidden" data-name="33">
+	<circle class="shape" cx="1155.1" cy="830.9" r="83.4"/>
+</g>
+<g id="32" class="shape_wrapper hidden" data-name="32">
+	<polygon class="shape" points="1002.5,759.4 919.3,759.4 877.7,831.4 919.3,903.5 1002.5,903.5 1044.1,831.4 	"/>
+</g>
+<g id="31" class="shape_wrapper hidden" data-name="31">
+	<polygon class="shape" points="765.1,903.2 848.3,759.2 682,759.2 	"/>
+</g>
+<g id="30" class="shape_wrapper hidden" data-name="30">
+	<rect class="shape" x="485.4" y="747.6" width="166.8" height="166.8"/>
+</g>
+<g id="29" class="shape_wrapper hidden" data-name="29">
+	<circle class="shape" cx="373" cy="830.9" r="83.4"/>
+</g>
+<g id="28" class="shape_wrapper hidden" data-name="28">
+	<polygon class="shape" points="176.7,759.3 93.6,903.3 259.9,903.3 	"/>
+</g>
+<g id="27" class="shape_wrapper hidden" data-name="27">
+	<polygon class="shape" points="1785.3,572.2 1702.1,572.2 1660.5,644.2 1702.1,716.3 1785.3,716.3 1826.9,644.2 	"/>
+</g>
+<g id="26" class="shape_wrapper hidden" data-name="26">
+	<circle class="shape" cx="1546.7" cy="637.3" r="83.4"/>
+</g>
+<g id="25" class="shape_wrapper hidden" data-name="25">
+	<polygon class="shape" points="1393.2,564.7 1310,564.7 1268.4,636.7 1310,708.7 1393.2,708.7 1434.7,636.7 	"/>
+</g>
+<g id="24" class="shape_wrapper hidden" data-name="24">
+	<polygon class="shape" points="1156.7,708.9 1239.8,564.9 1073.5,564.9 	"/>
+</g>
+<g id="23" class="shape_wrapper hidden" data-name="23">
+	<rect class="shape" x="877" y="553.5" width="166.8" height="166.8"/>
+</g>
+<g id="22" class="shape_wrapper hidden" data-name="22">
+	<polygon class="shape" points="806.3,564.7 723.1,564.7 681.5,636.7 723.1,708.7 806.3,708.7 847.9,636.7 	"/>
+</g>
+<g id="21" class="shape_wrapper hidden" data-name="21">
+	<circle class="shape" cx="569" cy="636.8" r="83.4"/>
+</g>
+<g id="20" class="shape_wrapper hidden" data-name="20">
+	<polygon class="shape" points="373.3,708.9 456.5,564.8 290.2,564.8 	"/>
+</g>
+<g id="19" class="shape_wrapper hidden" data-name="19">
+	<rect class="shape" x="93.8" y="553.9" width="166.8" height="166.8"/>
+</g>
+<g id="18" class="shape_wrapper hidden" data-name="18">
+	<circle class="shape" cx="1742.5" cy="442.6" r="83.4"/>
+</g>
+<g id="17" class="shape_wrapper hidden" data-name="17">
+	<rect class="shape" x="1463.3" y="359.2" width="166.8" height="166.8"/>
+</g>
+<g id="16" class="shape_wrapper hidden" data-name="16">
+	<polygon class="shape" points="1391.8,370 1308.6,370 1267,442 1308.6,514 1391.8,514 1433.4,442 	"/>
+</g>
+<g id="15" class="shape_wrapper hidden" data-name="15">
+	<polygon class="shape" points="1196.4,370 1113.3,370 1071.7,442 1113.3,514 1196.4,514 1238,442 	"/>
+</g>
+<g id="14" class="shape_wrapper hidden" data-name="14">
+	<polygon class="shape" points="960.4,371 877.2,515 1043.5,515 	"/>
+</g>
+<g id="13" class="shape_wrapper hidden" data-name="13">
+	<rect class="shape" x="682.3" y="359.2" width="166.8" height="166.8"/>
+</g>
+<g id="12" class="shape_wrapper hidden" data-name="12">
+	<polygon class="shape" points="610.9,371 527.8,371 486.2,443.1 527.8,515.1 610.9,515.1 652.5,443.1 	"/>
+</g>
+<g id="11" class="shape_wrapper hidden" data-name="11">
+	<polygon class="shape" points="372.9,370.3 289.7,514.3 456,514.3 	"/>
+</g>
+<g id="10" class="shape_wrapper hidden" data-name="10">
+	<circle class="shape" cx="177.2" cy="442.6" r="83.4"/>
+</g>
+<g id="9" class="shape_wrapper hidden" data-name="9">
+	<rect class="shape" x="1660.2" y="165.5" width="166.8" height="166.8"/>
+</g>
+<g id="8" class="shape_wrapper hidden" data-name="8">
+	<polygon class="shape" points="1589,177.2 1505.8,177.2 1464.3,249.2 1505.8,321.2 1589,321.2 1630.6,249.2 	"/>
+</g>
+<g id="7" class="shape_wrapper hidden" data-name="7">
+	<rect class="shape" x="1072.8" y="165.5" width="166.8" height="166.8"/>
+</g>
+<g id="6" class="shape_wrapper hidden" data-name="6">
+	<circle class="shape" cx="1351.8" cy="249.2" r="83.4"/>
+</g>
+<g id="5" class="shape_wrapper hidden" data-name="5">
+	<circle class="shape" cx="765.7" cy="250" r="83.4"/>
+</g>
+<g id="4" class="shape_wrapper hidden" data-name="4">
+	<polygon class="shape" points="1002.3,177.4 919.1,177.4 877.5,249.4 919.1,321.4 1002.3,321.4 1043.8,249.4 	"/>
+</g>
+<g id="3" class="shape_wrapper hidden" data-name="3">
+	<polygon class="shape" points="568.9,176.5 485.7,320.5 652,320.5 	"/>
+</g>
+<g id="2" class="shape_wrapper hidden" data-name="2">
+	<rect class="shape" x="289.6" y="165.5" width="166.8" height="166.8"/>
+</g>
+<g id="1" class="shape_wrapper hidden" data-name="1">
+	<polygon class="shape" points="218.3,177.4 135.1,177.4 93.5,249.4 135.1,321.4 218.3,321.4 259.9,249.4 	"/>
+</g>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
 <g id="Lines"><line class="lines" x1="686.66667" y1="1003.9995" x2="686.66667"/>
 <line class="lines" y1="141.66644" x2="1919" y2="141.66644"/><line class="lines" y1="321.8331" x2="1919" y2="321.8331"/>
 <line class="lines" y1="501.99977" x2="1919" y2="501.99977"/><line class="lines" y1="682.16644" x2="1919" y2="682.16644"/>
