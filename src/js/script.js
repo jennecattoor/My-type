@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to('.introduction-text', {
   scrollTrigger: '.introduction-text',
   color: 'var(--colorBlack)',
-  duration: '.5'
+  duration: 2
 });
 
 const horizontalSections = gsap.utils.toArray('.paul_renner');
@@ -36,15 +36,21 @@ horizontalSections.forEach(function (sec) {
   });
 });
 
-const shapes = document.querySelectorAll('.shape_wrapper');
+const shapes = Array.from(document.querySelectorAll('.shape_wrapper'));
 const buttonHeart = document.querySelector('.background-heart');
 const heartArray = [3, 11, 13, 19, 21, 23, 28, 30];
-const shapesArray = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]);
+const shapesArray = shuffle(shapes.map((el, index) => index));
 let i = 0;
 
 const randomShapes = () => {
   i ++;
+  if (i >= shapes.length) {
+    i = 0;
+  }
   const randomShape = shapes[shapesArray[i]];
+  console.log(i, shapesArray[i]);
+
+
 
   const removeClass = () => {
     randomShape.classList.add('hidden');
@@ -53,18 +59,13 @@ const randomShapes = () => {
   randomShape.classList.remove('hidden');
   setTimeout(removeClass, 5000);
 
-  if (i === 34) {
-    i = 0;
-  }
-};
 
-const shapesInterval = setInterval(randomShapes, 2500);
+};
 
 const showHeart = () => {
 
   const removeHeart = () => {
     heartArray.forEach(shape => shapes[shape].classList.add('hidden'));
-    shapesInterval;
   };
 
   shapes.forEach(shape => shape.classList.add('hidden'));
@@ -75,7 +76,7 @@ const showHeart = () => {
 
 export const init = () => {
 
-  shapesInterval;
+  setInterval(randomShapes, 2500);
   buttonHeart.addEventListener('click', showHeart);
 
   window.addEventListener('resize', () => {

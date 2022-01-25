@@ -18,10 +18,10 @@
     <p>
   </section>
   <section class="characteristics">
-    <h3 class="section-title character-title">Characteristics<br>of Futura</h3>
+    <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
     <?php foreach($characteristics as $characteristic): ?>
       <div class="character_item">
-        <div>
+        <div class="character_item-text">
           <hr>
           <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
           <hr>
@@ -35,8 +35,11 @@
     <div class="paul_renner-pin">
       <div class="paul_renner-wrap to-right">
         <div class="paul_renner-intro">
-          <h3 class="section-title paul_renner-title">The man<br>behind Futura:<br>Paul Renner</h3>
-          <p class="paul_renner-desc">How a boy born in Prussia changed the typeface world forever</p>
+          <div class="paul_renner-intro-text">
+            <h3 class="section-title paul_renner-title"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
+            <p class="paul_renner-desc">How a boy born in Prussia changed the typeface world forever</p>
+          </div>
+          <img src="./assets/img/paul.jpg" class="paul_renner-image" alt="Paul Renner">
         </div>
         <?php foreach($stories as $story): ?>
         <div class="paul_story">

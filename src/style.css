@@ -181,16 +181,10 @@ p {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   color: white;
-  padding: var(--spacerSmall);
-  padding-top: 0;
 }
 
 .paul_renner-wrap {
   display: flex;
-}
-
-.paul_renner-intro {
-  width: 100vw;
 }
 
 .paul_renner-title {
@@ -202,6 +196,10 @@ p {
   margin: 2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+.paul_renner-image {
+  max-width: 100vw;
 }
 
 .paul_story {
@@ -330,7 +328,15 @@ p {
   /* General */
 
   .section-title {
-    font-size: 6rem;
+    font-size: 6.1rem;
+  }
+
+  .br-1 {
+    margin-left: 2rem;
+  }
+
+  .br-2 {
+    margin-left: 4rem;
   }
 
   /* Slanted */
@@ -408,8 +414,20 @@ p {
 
   /* Paul Renner */
 
+  .paul_renner-intro {
+    display: flex;
+  }
+
   .paul_renner-title {
     margin: 8rem;
+  }
+
+  .paul_renner-intro-text {
+    max-width: 63vw;
+  }
+
+  .paul_renner-image {
+    max-height: 100vh;
   }
 
   .paul_story-text {
