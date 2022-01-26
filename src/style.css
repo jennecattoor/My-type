@@ -243,13 +243,22 @@ p {
 .paul_story-shapes {
   width: 2.5rem;
   margin-right: .5rem;
+  white-space: nowrap;
 }
 
 /* Used today */
 
-.used-today {
+.today {
   min-height: 100vh;
   background-color: var(--colorDarkGreen);
+  padding: 8rem 0;
+}
+
+.today-title {
+  font-size: 10.1vw;
+  color: var(--colorBlack);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (orientation: landscape) {
@@ -341,6 +350,13 @@ p {
   .character_item-image {
     max-width: 12rem;
   }
+
+  /* Used today */
+
+  .today-title {
+    font-size: 5rem;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -456,6 +472,12 @@ p {
 
   .paul_story-image-photo {
     width: 40rem;
+  }
+
+  /* Used today */
+
+  .today-title {
+    font-size: 10.1vw;
   }
 }
 

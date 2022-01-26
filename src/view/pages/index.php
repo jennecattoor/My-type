@@ -35,7 +35,6 @@
        <?php endforeach; ?>
     </div>
   </section>
-
   <section class="paul_renner">
     <div class="paul_renner-pin">
       <div class="paul_renner-wrap to-right">
@@ -63,8 +62,8 @@
       </div>
     </div>
     </section>
-  <section class="used-today">
-    <h3 class="section-title">Futura used today - Futura used today</h3>
-    <h3 class="section-title">Futura used today - Futura used today</h3>
-  </section>
+    <section class="today">
+      <h3 class="today-title">Futura used today</h3>
+      <h3 class="today-title">Futura used today</h3>
+    </section>
 </section>

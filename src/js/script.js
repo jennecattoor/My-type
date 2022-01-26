@@ -10,17 +10,6 @@ gsap.to('.introduction-text', {
   duration: 2
 });
 
-/*window.matchMedia('screen and (min-width: 768px)');
-gsap.to('.character_item-image', {
-  scrollTrigger: {
-    trigger: '.character_item-image',
-    start: 'top center',
-    end: 'bottom center',
-    markers: true,
-    pin: true,
-  }
-});*/
-
 
 const panels = gsap.utils.toArray('.character_item-image');
 
@@ -112,7 +101,6 @@ ScrollTrigger.matchMedia({
     });
   },
 });
-
 
 const horizontalSections = gsap.utils.toArray('.paul_renner');
 
