@@ -19,18 +19,23 @@
   </section>
   <section class="characteristics">
     <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
-    <?php foreach($characteristics as $characteristic): ?>
-      <div class="character_item">
-        <div class="character_item-text">
-          <hr>
-          <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
-          <hr>
-          <p class="character_item-description"><?php echo $characteristic->description ?></p>
+    <div class="character_item-wrapper">
+      <?php foreach($characteristics as $characteristic): ?>
+        <div class="character_item">
+          <div class="character_item-text">
+            <hr>
+            <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
+            <hr>
+            <p class="character_item-description"><?php echo $characteristic->description ?></p>
+          </div>
+          <div class="character_item-image">
+          <img class="character-image" src="./assets/letters/<?php echo $characteristic->id ?>.svg" alt="<?php echo $characteristic->title ?>">
+          </div>
         </div>
-        <img class="character_item-image" src="./assets/letters/<?php echo $characteristic->id ?>.svg" alt="<?php echo $characteristic->title ?>">
-      </div>
-    <?php endforeach; ?>
+       <?php endforeach; ?>
+    </div>
   </section>
+
   <section class="paul_renner">
     <div class="paul_renner-pin">
       <div class="paul_renner-wrap to-right">

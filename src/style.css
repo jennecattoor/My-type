@@ -63,7 +63,6 @@ p {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   padding: 0 var(--spacerSmall);
   color: var(--colorOrange);
 }
@@ -117,7 +116,6 @@ p {
 
 .introduction {
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
   background-color: var(--colorGreen);
   padding: 0 var(--spacerSmall);
   display: flex;
@@ -147,6 +145,10 @@ p {
   background-size: 220%;
 }
 
+.character_item-wrapper {
+  margin: 5rem 0;
+}
+
 .character_item {
   margin: 8rem 0;
   display: grid;
@@ -168,7 +170,7 @@ p {
 }
 
 .character_item-image {
-  max-width: 10rem;
+  width: 10rem;
   justify-self: center;
 }
 
@@ -179,7 +181,6 @@ p {
   overscroll-behavior: none;
   background-color: var(--colorBlack);
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
   color: white;
 }
 
@@ -312,14 +313,18 @@ p {
   }
 
   .character_item {
-    margin: 10rem auto;
+    margin: 0 auto;
     max-width: 75rem;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh;
+  }
+
+  .character_item-text {
+    align-self: center;
   }
 
   .character_item-image {
     max-width: 12rem;
-    justify-self: center;
   }
 }
 
@@ -409,7 +414,7 @@ p {
   }
 
   .character_item-image {
-    max-width: 15rem;
+    min-width: 15rem;
   }
 
   /* Paul Renner */

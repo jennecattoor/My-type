@@ -10,6 +10,103 @@ gsap.to('.introduction-text', {
   duration: 2
 });
 
+/*window.matchMedia('screen and (min-width: 768px)');
+gsap.to('.character_item-image', {
+  scrollTrigger: {
+    trigger: '.character_item-image',
+    start: 'top center',
+    end: 'bottom center',
+    markers: true,
+    pin: true,
+  }
+});*/
+
+const panels = gsap.utils.toArray('.character_item-image');
+
+panels.forEach(item => {
+  // Get the to be staggered elements
+  const contentElements = item.querySelectorAll('.character-image');
+
+  // Set initial state on the to be staggered elements
+  contentElements.forEach(el => {
+    gsap.set(el, {
+      y: 0,
+      opacity: 0
+    });
+  });
+
+  ScrollTrigger.create({
+    trigger: item,
+    scrub: true,
+    start: '50% 50%',
+    pin: true,
+    end: 'bottom 50%',
+    snap: {snapTo: [0.5], duration: 1, delay: 0},
+    onEnter: ({progress, direction, isActive}) => {
+      console.log('onEnter', progress, direction, isActive);
+      gsap.fromTo(
+        contentElements,
+        {
+          y: 80,
+          opacity: 0
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.05
+        }
+      );
+    },
+    onLeave: ({progress, direction, isActive}) => {
+      console.log('onLeave', progress, direction, isActive);
+      gsap.fromTo(
+        contentElements,
+        {
+          y: 0,
+          opacity: 1
+        },
+        {
+          y: - 80,
+          opacity: 0,
+          stagger: 0.05
+        }
+      );
+    },
+    onLeaveBack: ({progress, direction, isActive}) => {
+      console.log('onLeaveBack', progress, direction, isActive);
+
+      gsap.fromTo(
+        contentElements,
+        {
+          y: 0,
+          opacity: 1
+        },
+        {
+          y: - 80,
+          opacity: 0,
+          stagger: 0.05
+        }
+      );
+    },
+    onEnterBack: ({progress, direction, isActive}) => {
+      console.log('onEnterBack', progress, direction, isActive);
+      gsap.fromTo(
+        contentElements,
+        {
+          y: - 80,
+          opacity: 0
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.05
+        }
+      );
+    }
+  });
+});
+
+
 const horizontalSections = gsap.utils.toArray('.paul_renner');
 
 horizontalSections.forEach(function (sec) {
@@ -48,9 +145,6 @@ const randomShapes = () => {
     i = 0;
   }
   const randomShape = shapes[shapesArray[i]];
-  console.log(i, shapesArray[i]);
-
-
 
   const removeClass = () => {
     randomShape.classList.add('hidden');
@@ -58,7 +152,6 @@ const randomShapes = () => {
 
   randomShape.classList.remove('hidden');
   setTimeout(removeClass, 5000);
-
 
 };
 
@@ -78,11 +171,4 @@ export const init = () => {
 
   setInterval(randomShapes, 2500);
   buttonHeart.addEventListener('click', showHeart);
-
-  window.addEventListener('resize', () => {
-    const vh = window.innerHeight * 0.01;
-    if (window.innerWidth >= 1024) {
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-  });
 };
