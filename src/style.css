@@ -261,6 +261,19 @@ p {
   font-weight: 700;
 }
 
+/* Footer */
+
+.footer {
+  background-color: var(--colorBlack);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.footer-link {
+  color: white;
+}
+
 @media (orientation: landscape) {
 
   .header-background {

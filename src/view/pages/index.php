@@ -61,9 +61,12 @@
         <?php endforeach; ?>
       </div>
     </div>
-    </section>
-    <section class="today">
-      <h3 class="today-title">Futura used today</h3>
-      <h3 class="today-title">Futura used today</h3>
-    </section>
+  </section>
+  <section class="today">
+    <h3 class="today-title">Futura used today</h3>
+    <h3 class="today-title">Futura used today</h3>
+  </section>
+  <footer class="footer">
+    <p>Website made by <a class="footer-link" href="https://jennecattoor.com/" target="_blank" rel="noopener noreferrer">Jenne Cattoor</a></p>
+  </footer>
 </section>
