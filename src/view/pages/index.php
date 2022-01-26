@@ -42,7 +42,7 @@
         <div class="paul_renner-intro">
           <div class="paul_renner-intro-text">
             <h3 class="section-title paul_renner-title"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
-            <p class="paul_renner-desc">How a boy born in Prussia changed the typeface world forever</p>
+            <p class="paul_renner-desc">How a boy born in Prussia changed <br class="mobile-br">the typeface world forever</p>
           </div>
           <img src="./assets/img/paul.jpg" class="paul_renner-image" alt="Paul Renner">
         </div>
