@@ -24,7 +24,6 @@ ScrollTrigger.matchMedia({
       // Set initial state on the to be staggered elements
       contentElements.forEach(el => {
         gsap.set(el, {
-          y: 0,
           opacity: 0
         });
       });
@@ -32,66 +31,53 @@ ScrollTrigger.matchMedia({
       ScrollTrigger.create({
         trigger: item,
         scrub: true,
-        start: '50% 50%',
+        start: '10% 40%',
         pin: true,
         end: 'bottom 50%',
-        snap: {snapTo: [0.5], duration: 1, delay: 0},
-        onEnter: ({progress, direction, isActive}) => {
-          console.log('onEnter', progress, direction, isActive);
+        onEnter: () => {
           gsap.fromTo(
             contentElements,
             {
-              y: 80,
               opacity: 0
             },
             {
-              y: 0,
               opacity: 1,
               stagger: 0.05
             }
           );
         },
-        onLeave: ({progress, direction, isActive}) => {
-          console.log('onLeave', progress, direction, isActive);
+        onLeave: () => {
           gsap.fromTo(
             contentElements,
             {
-              y: 0,
               opacity: 1
             },
             {
-              y: - 80,
               opacity: 0,
               stagger: 0.05
             }
           );
         },
-        onLeaveBack: ({progress, direction, isActive}) => {
-          console.log('onLeaveBack', progress, direction, isActive);
+        onLeaveBack: () => {
 
           gsap.fromTo(
             contentElements,
             {
-              y: 0,
               opacity: 1
             },
             {
-              y: - 80,
               opacity: 0,
               stagger: 0.05
             }
           );
         },
-        onEnterBack: ({progress, direction, isActive}) => {
-          console.log('onEnterBack', progress, direction, isActive);
+        onEnterBack: () => {
           gsap.fromTo(
             contentElements,
             {
-              y: - 80,
               opacity: 0
             },
             {
-              y: 0,
               opacity: 1,
               stagger: 0.05
             }
