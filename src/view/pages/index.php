@@ -9,18 +9,18 @@
       <?php echo $svgs->background ?>
     </svg>
     <a class="background-heart"><span>Click here</span><br>if you &#9829; Futura</a>
-    <img class="scroll-down" src="./assets/img/scroll.svg" alt="Scroll down">
+    <img class="scroll-down" src="./assets/img/header/scroll.svg" alt="Scroll down">
   </section>
   <section class="introduction">
-    <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes.svg" alt="geometric shapes"><br class="mobile-br">
+    <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes.svg" alt="geometric shapes"><br class="mobile-br">
       Futura was designed in 1927 by Paul Renner as a contribution on the <span class="underline">New Frankfurt-project</span>.
       It’s based on <span class="underline">geometric shapes</span>, similar in spirit to the <span class="underline">Bauhaus</span> design style of the period.
     <p>
   </section>
   <section class="rotating-shapes">
-    <img class="rotating-shape rotating-shape-one" src="./assets/img/shape2.svg" alt="Geometric shape">
-    <img class="rotating-shape rotating-shape-two" src="./assets/img/shape1.svg" alt="Geometric shape">
-    <img class="rotating-shape rotating-shape-three" src="./assets/img/shape3.svg" alt="Geometric shape">
+    <img class="rotating-shape rotating-shape-one" src="./assets/img/shape/shape2.svg" alt="Geometric shape">
+    <img class="rotating-shape rotating-shape-two" src="./assets/img/shape/shape1.svg" alt="Geometric shape">
+    <img class="rotating-shape rotating-shape-three" src="./assets/img/shape/shape3.svg" alt="Geometric shape">
   </section>
   <section class="characteristics">
     <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
@@ -29,12 +29,12 @@
         <div class="character_item">
           <div class="character_item-text">
             <hr>
-            <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
+            <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
             <hr>
             <p class="character_item-description"><?php echo $characteristic->description ?></p>
           </div>
           <div class="character_item-image">
-          <img class="character-image" src="./assets/letters/<?php echo $characteristic->id ?>.svg" alt="<?php echo $characteristic->title ?>">
+          <img class="character-image" src="./assets/img/letters/<?php echo $characteristic->id ?>.svg" alt="<?php echo $characteristic->title ?>">
           </div>
         </div>
        <?php endforeach; ?>
@@ -48,7 +48,7 @@
             <h3 class="section-title paul_renner-title"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
             <p class="paul_renner-desc">How a boy born in Prussia changed <br class="mobile-br">the typeface world forever</p>
           </div>
-          <img src="./assets/img/paul.jpg" class="paul_renner-image" alt="Paul Renner">
+          <img src="./assets/img/paul/paul.jpg" class="paul_renner-image" alt="Paul Renner">
         </div>
         <?php foreach($stories as $story): ?>
         <div class="paul_story">
@@ -58,8 +58,8 @@
           </div>
           <?php if ($story->has_image == '1'): ?>
             <div class="paul_story-image">
-              <img src="./assets/img/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
-              <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
+              <img src="./assets/img/paul/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
+              <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
             </div>
           <?php endif; ?>
         </div>
