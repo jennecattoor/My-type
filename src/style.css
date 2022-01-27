@@ -144,6 +144,25 @@ p {
   color: var(--colorDarkGreen);
 }
 
+/* Rotating shapes */
+
+.rotating-shapes {
+  background-color: var(--colorGreen);
+  display: grid;
+  padding: 0 var(--spacerSmall);
+  padding-bottom: 8rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.rotating-shape {
+  max-width: 10rem;
+}
+
+.rotating-shape:nth-child(2) {
+  justify-self: end;
+}
+
 /* Characteristics */
 
 .characteristics {
@@ -342,6 +361,26 @@ p {
     max-width: 80rem;
   }
 
+  /* Rotating shapes */
+
+  .rotating-shapes {
+    padding: 0 var(--spacerSmall);
+    padding-bottom: 10rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .rotating-shape {
+    max-width: 12rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .rotating-shape:nth-child(2) {
+    justify-self: center;
+  }
+
   /* Characteristics */
 
   .characteristics {
@@ -448,6 +487,12 @@ p {
   .introduction-text {
     font-size: 3.5rem;
     line-height: 5rem;
+  }
+
+  /* Rotating shapes */
+
+  .rotating-shape {
+    max-width: 18rem;
   }
 
   /* Characteristics */

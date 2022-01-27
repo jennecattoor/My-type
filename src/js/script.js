@@ -88,6 +88,39 @@ ScrollTrigger.matchMedia({
   },
 });
 
+gsap.to('.rotating-shape-one', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * 1,
+  duration: 1, ease: 'none',
+});
+
+gsap.to('.rotating-shape-two', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * - 1,
+  duration: 1, ease: 'none',
+});
+
+gsap.to('.rotating-shape-three', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * 1.5,
+  duration: 1, ease: 'none',
+});
+
 const horizontalSections = gsap.utils.toArray('.paul_renner');
 
 horizontalSections.forEach(function (sec) {

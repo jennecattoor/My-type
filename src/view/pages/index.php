@@ -17,6 +17,11 @@
       It’s based on <span class="underline">geometric shapes</span>, similar in spirit to the <span class="underline">Bauhaus</span> design style of the period.
     <p>
   </section>
+  <section class="rotating-shapes">
+    <img class="rotating-shape rotating-shape-one" src="./assets/img/shape2.svg" alt="Geometric shape">
+    <img class="rotating-shape rotating-shape-two" src="./assets/img/shape1.svg" alt="Geometric shape">
+    <img class="rotating-shape rotating-shape-three" src="./assets/img/shape3.svg" alt="Geometric shape">
+  </section>
   <section class="characteristics">
     <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
     <div class="character_item-wrapper">
