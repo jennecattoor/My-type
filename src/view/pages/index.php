@@ -69,6 +69,16 @@
   </section>
   <section class="today">
     <h3 class="today-title">Futura used today</h3>
+    <div class="today-gallery">
+      <img class="today-gallery-image" src="./assets/img/today/louisvuitton/louisvuitton.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/dominos/dominos.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/apolo11/apolo11.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/redbull/redbull.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/vodka/vodka.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/dolce/dolce.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/volkswagen/volkswagen.jpg" alt="Image of">
+      <img class="today-gallery-image" src="./assets/img/today/supreme/supreme.jpg" alt="Image of">
+    </div>
     <h3 class="today-title">Futura used today</h3>
   </section>
   <footer class="footer">
