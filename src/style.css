@@ -35,6 +35,8 @@ body {
 
 .underline {
   text-decoration: underline solid var(--colorBlack) 2px;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-text-decoration-line: underline;
   text-underline-offset: 3px;
 }
 
