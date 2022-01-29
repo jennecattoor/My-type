@@ -450,6 +450,10 @@ p {
     font-size: 5rem;
   }
 
+  .today-title-span {
+    font-size: 5rem;
+  }
+
   .gallary-image-wrapper {
     height: calc(100vw / 4);
   }
@@ -594,6 +598,10 @@ p {
   /* Used today */
 
   .today-title {
+    font-size: 10vw;
+  }
+
+  .today-title-span {
     font-size: 10vw;
   }
 
