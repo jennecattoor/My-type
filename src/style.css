@@ -9,6 +9,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -333,6 +334,36 @@ p {
   color: white;
 }
 
+/* Links */
+
+.links {
+  background-color: var(--colorDarkGreen);
+  padding: 2rem 1rem;
+}
+
+.links-title {
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-weight: 700;
+}
+
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links-item {
+  margin: .5rem 1rem;
+}
+
+.item-link {
+  text-decoration: none;
+  color: var(--colorLightGreen);
+  font-size: 1.8rem;
+}
+
 @media (orientation: landscape) {
 
   .header-background {
@@ -465,6 +496,12 @@ p {
 
   .gallary-image-wrapper:nth-child(n+5) {
     display: flex;
+  }
+
+  /* Links */
+
+  .links {
+    padding: 3rem 2rem;
   }
 
 }

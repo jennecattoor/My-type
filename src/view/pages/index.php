@@ -11,7 +11,7 @@
     <a class="background-heart"><span>Click here</span><br>if you &#9829; Futura</a>
     <img class="scroll-down" src="./assets/img/header/scroll.svg" alt="Scroll down">
   </section>
-  <section class="introduction">
+  <section class="introduction" id="intro">
     <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes.svg" alt="geometric shapes"><br class="mobile-br">
       Futura was designed in 1927 by Paul Renner as a contribution on the <span class="underline">New Frankfurt-project</span>.
       It’s based on <span class="underline">geometric shapes</span>, similar in spirit to the <span class="underline">Bauhaus</span> design style of the period.
@@ -22,7 +22,7 @@
     <img class="rotating-shape rotating-shape-two" src="./assets/img/shape/shape1.svg" alt="Geometric shape">
     <img class="rotating-shape rotating-shape-three" src="./assets/img/shape/shape3.svg" alt="Geometric shape">
   </section>
-  <section class="characteristics">
+  <section class="characteristics" id="characteristics">
     <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
     <div class="character_item-wrapper">
       <?php foreach($characteristics as $characteristic): ?>
@@ -40,7 +40,7 @@
        <?php endforeach; ?>
     </div>
   </section>
-  <section class="paul_renner">
+  <section class="paul_renner" id="paul">
     <div class="paul_renner-pin">
       <div class="paul_renner-wrap to-right">
         <div class="paul_renner-intro">
@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-  <section class="today">
+  <section class="today" id="today">
     <h3 class="today-title"><span class="today-title-span">Futura</span><br class="mobile-br"> used today</h3>
     <div class="today-gallary">
       <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/louisvuitton/louisvuitton.jpg" alt="Image of"></div>
@@ -80,6 +80,15 @@
       <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/supreme/supreme.jpg" alt="Image of"></div>
     </div>
     <h3 class="today-title"><span class="today-title-span">Futura</span><br class="mobile-br"> used today</h3>
+  </section>
+  <section class="links">
+    <p class="links-title">Quick links</p>
+    <ul class="links-list">
+      <li class="links-item"><a class="item-link" href=#intro>Intro</a></li>
+      <li class="links-item"><a class="item-link" href=#characteristics>Characteristics</a></li>
+      <li class="links-item"><a class="item-link" href=#paul>Paul Renner</a></li>
+      <li class="links-item"><a class="item-link" href=#today>Used Today</a></li>
+    </ul>
   </section>
   <footer class="footer">
     <p>Website made by <a class="footer-link" href="https://jennecattoor.com/" target="_blank" rel="noopener noreferrer">Jenne Cattoor</a></p>
