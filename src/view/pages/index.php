@@ -81,6 +81,12 @@
     </div>
     <h3 class="today-title"><span class="today-title-span">Futura</span><br class="mobile-br"> used today</h3>
   </section>
+  <section class="series">
+    <h3 class="section-title series-title"><span class="br-1">Enjoyed</span><br>the story<br><span class="br-2">of Futura?</span></h3>
+    <div class="series-text-wrapper">
+      <p class="introduction-text series-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes2.svg" alt="geometric shapes">This is a series where we bring world changing typefaces into the spotlight. You can find more stories on the <span class="underline"><a class="slanted-link" href="https://www.slanted.de/" target="_blank" rel="noopener noreferrer">slanted</a></span> website</p>
+    </div>
+  </section>
   <section class="links">
     <p class="links-title">Quick links</p>
     <ul class="links-list">

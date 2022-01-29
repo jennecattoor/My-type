@@ -4,13 +4,6 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.introduction-text', {
-  scrollTrigger: '.introduction-text',
-  color: 'var(--colorBlack)',
-  duration: 2
-});
-
-
 const panels = gsap.utils.toArray('.character_item-image');
 
 ScrollTrigger.matchMedia({
@@ -18,10 +11,7 @@ ScrollTrigger.matchMedia({
   '(min-width: 768px)': function() {
 
     panels.forEach(item => {
-      // Get the to be staggered elements
       const contentElements = item.querySelectorAll('.character-image');
-
-      // Set initial state on the to be staggered elements
       contentElements.forEach(el => {
         gsap.set(el, {
           opacity: 0
@@ -33,7 +23,7 @@ ScrollTrigger.matchMedia({
         scrub: true,
         start: '10% 40%',
         pin: true,
-        end: 'bottom 50%',
+        end: 'bottom 60%',
         onEnter: () => {
           gsap.fromTo(
             contentElements,
