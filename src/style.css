@@ -154,6 +154,7 @@ p {
 /* Rotating shapes */
 
 .rotating-shapes {
+  margin-top: -10rem;
   background-color: var(--colorGreen);
   display: grid;
   padding: 0 var(--spacerSmall);
@@ -256,7 +257,8 @@ p {
 }
 
 .paul_story-image-photo {
-  width: 20rem;
+  max-width: 20rem;
+  max-height: 70vh;
 }
 
 .paul_story-image-text {
@@ -397,6 +399,7 @@ p {
   /* Rotating shapes */
 
   .rotating-shapes {
+    margin-top: -5rem;
     padding: 0 var(--spacerSmall);
     padding-bottom: 10rem;
     grid-template-rows: 1fr;
@@ -541,6 +544,10 @@ p {
     max-width: 18rem;
   }
 
+  .rotating-shape-two {
+    margin-top: -15rem;
+  }
+
   /* Characteristics */
 
   .characteristics {
@@ -575,7 +582,8 @@ p {
   }
 
   .paul_story-image-photo {
-    width: 40rem;
+    max-width: 40rem;
+    max-height: 70vh;
   }
 
   /* Used today */
