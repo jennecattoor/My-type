@@ -48,7 +48,19 @@
             <h3 class="section-title paul_renner-title"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
             <p class="paul_renner-desc">How a boy born in Prussia changed <br class="mobile-br">the typeface world forever</p>
           </div>
-          <img src="./assets/img/paul/paul.jpg" class="paul_renner-image" alt="Paul Renner">
+          <picture>
+            <img
+            class="paul_renner-image"
+            sizes="(max-width: 907px) 100vw, 907px"
+            srcset="
+            ./assets/img/paul/paul/paul-200.jpg 200w,
+            ./assets/img/paul/paul/paul-492.jpg 492w,
+            ./assets/img/paul/paul/paul-682.jpg 682w,
+            ./assets/img/paul/paul/paul-847.jpg 847w,
+            ./assets/img/paul/paul/paul-907.jpg 907w"
+            src="paul_ec2zeb_c_scale,w_907.jpg"
+            alt="Paul Renner">
+          </picture>
         </div>
         <?php foreach($stories as $story): ?>
         <div class="paul_story">
@@ -58,7 +70,7 @@
           </div>
           <?php if ($story->has_image == '1'): ?>
             <div class="paul_story-image">
-              <img src="./assets/img/paul/<?php echo $story->image ?>.jpg" class="paul_story-image-photo">
+              <?php echo $story->image ?>
               <p class="paul_story-image-text"><img class="paul_story-shapes" src="./assets/img/shapes/shapes3.svg" alt="geometric shapes"><?php echo $story->image_desc ?></p>
             </div>
           <?php endif; ?>
