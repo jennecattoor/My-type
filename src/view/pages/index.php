@@ -4,7 +4,7 @@
   </div>
   <section class="header">
     <h1 class="title">Futura</h1>
-    <h2 class="title-small">The geometric <br class="mobile-br">sans-serif font</h2>
+    <h2 class="title-small animateBottom">The geometric <br class="mobile-br">sans-serif font</h2>
     <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
       <?php echo $svgs->background ?>
     </svg>
@@ -12,7 +12,7 @@
     <img class="scroll-down" src="./assets/img/header/scroll.svg" alt="Scroll down">
   </section>
   <section class="introduction" id="intro">
-    <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes.svg" alt="geometric shapes"><br class="mobile-br">
+    <p class="introduction-text animateBottom"><img class="introduction-shapes" src="./assets/img/shapes/shapes.svg" alt="geometric shapes"><br class="mobile-br">
       Futura was designed in 1927 by Paul Renner as a contribution to the <span class="underline">New Frankfurt project</span>.
       It’s based on <span class="underline">geometric shapes</span>, similar in spirit to the <span class="underline">Bauhaus</span> design style of the period.
     <p>
@@ -23,14 +23,14 @@
     <img class="rotating-shape rotating-shape-three" src="./assets/img/shape/shape3.svg" alt="Geometric shape">
   </section>
   <section class="characteristics" id="characteristics">
-    <h3 class="section-title character-title">Characteristics<br><span class="br-2">of Futura</span></h3>
+    <h3 class="section-title character-title animateBottom">Characteristics<br><span class="br-2">of Futura</span></h3>
     <div class="character_item-wrapper">
       <?php foreach($characteristics as $characteristic): ?>
         <div class="character_item">
           <div class="character_item-text">
-            <hr>
+            <hr class="animateLines">
             <p class="character_item-title"><img class="character-shapes" src="./assets/img/shapes/shapes2.svg" alt="geometric shapes"><?php echo $characteristic->title ?></p>
-            <hr>
+            <hr class="animateLines">
             <p class="character_item-description"><?php echo $characteristic->description ?></p>
           </div>
           <div class="character_item-image">
@@ -45,7 +45,7 @@
       <div class="paul_renner-wrap to-right">
         <div class="paul_renner-intro">
           <div class="paul_renner-intro-text">
-            <h3 class="section-title paul_renner-title"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
+            <h3 class="section-title paul_renner-title animateBottom"><span class="br-1">The man</span><br><span class="br-2">behind Futura:</span><br>Paul Renner</h3>
             <p class="paul_renner-desc">How a boy born in Prussia changed <br class="mobile-br">the typeface world forever</p>
           </div>
           <picture>

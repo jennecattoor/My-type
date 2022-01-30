@@ -4,6 +4,28 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const animateBottom = gsap.utils.toArray('.animateBottom');
+animateBottom.forEach(animation => {
+  gsap.from(animation, {
+    scrollTrigger: animation,
+    duration: 1.5,
+    yPercent: 100,
+    ease: 'power4',
+    stagger: 0.1
+  });
+});
+
+const animateLines = gsap.utils.toArray('.animateLines');
+animateLines.forEach(line => {
+  gsap.from(line, {
+    scrollTrigger: line,
+    duration: 2,
+    width: 0,
+    ease: 'power4',
+    stagger: 0.1
+  });
+});
+
 const panels = gsap.utils.toArray('.character_item-image');
 
 ScrollTrigger.matchMedia({
