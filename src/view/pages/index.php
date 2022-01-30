@@ -13,7 +13,7 @@
   </section>
   <section class="introduction" id="intro">
     <p class="introduction-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes.svg" alt="geometric shapes"><br class="mobile-br">
-      Futura was designed in 1927 by Paul Renner as a contribution on the <span class="underline">New Frankfurt-project</span>.
+      Futura was designed in 1927 by Paul Renner as a contribution to the <span class="underline">New Frankfurt project</span>.
       It’s based on <span class="underline">geometric shapes</span>, similar in spirit to the <span class="underline">Bauhaus</span> design style of the period.
     <p>
   </section>
@@ -79,7 +79,7 @@
   <section class="series">
     <h3 class="section-title series-title"><span class="br-1">Enjoyed</span><br>the story<br><span class="br-2">of Futura?</span></h3>
     <div class="series-text-wrapper">
-      <p class="introduction-text series-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes2.svg" alt="geometric shapes">This is a series where we bring world changing typefaces into the spotlight. You can find more stories on the <span class="underline"><a class="slanted-link" href="https://www.slanted.de/" target="_blank" rel="noopener noreferrer">slanted</a></span> website</p>
+      <p class="introduction-text series-text"><img class="introduction-shapes" src="./assets/img/shapes/shapes2.svg" alt="geometric shapes">This is from a series where we bring world-changing typefaces into the spotlight. You can find more stories on the <span class="underline"><a class="slanted-link" href="https://www.slanted.de/" target="_blank" rel="noopener noreferrer">slanted</a></span> website</p>
     </div>
   </section>
   <section class="links">
