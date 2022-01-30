@@ -314,6 +314,7 @@ p {
 .gallary-image {
   max-width: 84%;
   object-fit: cover;
+  margin-bottom: -5px;
 }
 
 .gallary-image-wrapper:nth-child(n+5) {

@@ -70,14 +70,9 @@
   <section class="today" id="today">
     <h3 class="today-title"><span class="today-title-span">Futura</span><br class="mobile-br"> used today</h3>
     <div class="today-gallary">
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/louisvuitton/louisvuitton.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/dominos/dominos.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/apolo11/apolo11.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/redbull/redbull.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/vodka/vodka.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/dolce/dolce.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/volkswagen/volkswagen.jpg" alt="Image of"></div>
-      <div class="gallary-image-wrapper"><img class="gallary-image" src="./assets/img/today/supreme/supreme.jpg" alt="Image of"></div>
+    <?php foreach($todays as $today): ?>
+      <div class="gallary-image-wrapper"><?php echo $today->src ?></div>
+    <?php endforeach; ?>
     </div>
     <h3 class="today-title"><span class="today-title-span">Futura</span><br class="mobile-br"> used today</h3>
   </section>
