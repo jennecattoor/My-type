@@ -8,7 +8,7 @@ const animateBottom = gsap.utils.toArray('.animateBottom');
 animateBottom.forEach(animation => {
   gsap.from(animation, {
     scrollTrigger: animation,
-    duration: 1.5,
+    duration: 1,
     yPercent: 100,
     ease: 'power4',
     stagger: 0.1
@@ -26,10 +26,42 @@ animateLines.forEach(line => {
   });
 });
 
+gsap.to('.rotating-shape-one', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * 1,
+  duration: 1, ease: 'none',
+});
+
+gsap.to('.rotating-shape-two', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * - 1,
+  duration: 1, ease: 'none',
+});
+
+gsap.to('.rotating-shape-three', {
+  scrollTrigger: {
+    trigger: '.introduction',
+    scrub: 1,
+    start: 'top top',
+    end: '+=1000',
+  },
+  rotation: 360 * 1.5,
+  duration: 1, ease: 'none',
+});
+
+
 const panels = gsap.utils.toArray('.character_item-image');
-
 ScrollTrigger.matchMedia({
-
   '(min-width: 768px)': function() {
 
     panels.forEach(item => {
@@ -100,48 +132,11 @@ ScrollTrigger.matchMedia({
   },
 });
 
-gsap.to('.rotating-shape-one', {
-  scrollTrigger: {
-    trigger: '.introduction',
-    scrub: 1,
-    start: 'top top',
-    end: '+=1000',
-  },
-  rotation: 360 * 1,
-  duration: 1, ease: 'none',
-});
-
-gsap.to('.rotating-shape-two', {
-  scrollTrigger: {
-    trigger: '.introduction',
-    scrub: 1,
-    start: 'top top',
-    end: '+=1000',
-  },
-  rotation: 360 * - 1,
-  duration: 1, ease: 'none',
-});
-
-gsap.to('.rotating-shape-three', {
-  scrollTrigger: {
-    trigger: '.introduction',
-    scrub: 1,
-    start: 'top top',
-    end: '+=1000',
-  },
-  rotation: 360 * 1.5,
-  duration: 1, ease: 'none',
-});
-
 const horizontalSections = gsap.utils.toArray('.paul_renner');
-
 horizontalSections.forEach(function (sec) {
-
   const thisPinWrap = sec.querySelector('.paul_renner-pin');
   const thisAnimWrap = thisPinWrap.querySelector('.paul_renner-wrap');
-
   const getToValue = () => - (thisAnimWrap.scrollWidth - window.innerWidth);
-
   gsap.fromTo(thisAnimWrap, {
     x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue()
   }, {
